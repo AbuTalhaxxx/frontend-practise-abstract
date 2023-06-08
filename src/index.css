@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'GT America Standard';
+    src: url('fonts/gt-america-standard-regular-trial-webfont.woff2') format('woff2'),
+         url('fonts/gt-america-standard-regular-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+	box-sizing: border-box;
+	font-family: 'GT America Standard';
+}

@@ -1,6 +1,7 @@
 import AbstractLogo from "./AbstractLogo";
 import {useState, useRef, useEffect} from "react";
 import {handleEnter} from "./MidSection";
+import QuestionMarkSvg from './QuestionMarkSvg'
 
 function Navbar() {
     
@@ -24,6 +25,9 @@ function Navbar() {
 
 	return (
 		<header>
+		    <div className="fixed h-[50px] w-[110px] bg-[#4c5fd5] rounded-3xl bottom-[15px] right-[15px] hover:cursor-pointer">
+		    	<QuestionMarkSvg className="h-[25px] fill-white relative top-[12px] left-[20px] inline-block"/><a href="#" className="relative text-white text-base font-bold left-[25px] top-[14px]">Help</a>
+		    </div>
 		    <div className={`h-[88px] w-full bg-white ${searchActive ? "block" : "hidden"}`}>
 		    	<input ref={inputNav} type="search" className="focus:outline-none md:ml-[7%] w-[80%] md:w-[83%] my-4 ml-5 h-[58px] border-[#000] peer text-xl border-[.5px] rounded border-solid pl-3 round placeholder:text-black placeholder:text-xl inline-block" placeholder="Search"/>
 	   	    	<i className="fa fa-close ml-4 transition-transform hover:scale-[1.05] duration-500 cursor-pointer inline-block text-black h-[50px] w-[50px] text-base" onClick={handleActivity}></i>

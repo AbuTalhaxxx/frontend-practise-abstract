@@ -31,14 +31,16 @@ function ListSection() {
     
 
 	return (
-		<section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:mx-14 sm:mx-4">
+		<section className="w-full">
+		<div className="grid grid-cols-1 md:grid-cols-2 gap-[70px] sm:mx-14 md:mx-[140px] my-[150px] ml-3">
 	    {
 	    	imageLinks.map((item, index)=>{
 	    		return (
-                    <MidItem imageLink={item} heading={headings[index]} cardText={cardTexts[index]} />
+                    <MidItem imageLink={item} key={index} heading={headings[index]} cardText={cardTexts[index]} />
 	    			);
 	    	})
-	    }		
+	    }	
+	    </div>	
 		</section>
 	);
 }

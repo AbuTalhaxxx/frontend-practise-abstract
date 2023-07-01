@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './components/Navbar'
 import MidSection from './components/MidSection'
 import ListSection from './components/ListSection'
+import AbstractFooter from './components/AbstractFooter'
 
 function App() {
   
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <MidSection />
       <ListSection />
+      <AbstractFooter />
       </>);
 
 }
